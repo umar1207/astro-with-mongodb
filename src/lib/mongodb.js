@@ -18,7 +18,7 @@ const connectToDB = async () => {
   const mongo = await new MongoClient(uri, options).connect();
   // Change this to your own DB name of course.
   // Or better yet, put it in your .env
-  return mongo.db("astro-mongodb");
+  return mongo.db("uData");
 };
 
 export const getDB = async () => {
