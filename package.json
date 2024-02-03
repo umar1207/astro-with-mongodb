@@ -12,11 +12,16 @@
   "dependencies": {
     "@astrojs/svelte": "^5.0.3",
     "astro": "^4.3.0",
+    "aws-sdk": "^2.1550.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "mock-aws-s3": "^4.0.2",
     "mongodb": "^6.3.0",
+    "nock": "^13.5.1",
     "svelte": "^4.2.9",
     "vite": "^5.0.12"
   },
   "devDependencies": {
-    "@astrojs/node": "^8.1.0"
+    "@astrojs/node": "^8.2.0"
   }
 }

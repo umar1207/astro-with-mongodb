@@ -8,7 +8,26 @@ if (!users) {
     statusText: "Yes found",
   });
 }
+
 ---
+
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+
 
 <Layout>
   <table>
@@ -17,17 +36,16 @@ if (!users) {
       <tr>
         <th>Name</th>
         <th>Email</th>
-        <th>Age</th>
       </tr>
     </thead>
     <tbody>
       {users.map((user) => (
         <tr>
-          <td style="text-align: center;">{user.name}</td>
-          <td style="text-align: center;">{user.email}</td>
-          <td style="text-align: center;">{user.age}</td>
+          <td>{user.name}</td>
+          <td>{user.email}</td>
         </tr>
       ))}
     </tbody>
   </table>
+  
 </Layout>
